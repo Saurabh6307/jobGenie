@@ -90,7 +90,7 @@ const OnboardingForm = ({ industries }) => {
         <CardContent>
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
             <div className="space-y-2">
-              <Label htmlFor="industry">Industry</Label>
+              <Label htmlFor="industry">Sector</Label>
               <Select
                 onValueChange={(value) => {
                   setValue("industry", value);
@@ -105,7 +105,7 @@ const OnboardingForm = ({ industries }) => {
                 </SelectTrigger>
                 <SelectContent>
                   <SelectGroup>
-                    <SelectLabel>Industries</SelectLabel>
+                    <SelectLabel>Sectors</SelectLabel>
                     {industries.map((ind) => (
                       <SelectItem key={ind.id} value={ind.id}>
                         {ind.name}
